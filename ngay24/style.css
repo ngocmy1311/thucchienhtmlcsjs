@@ -1,0 +1,32 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    border: 1px solid #000; 
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #000; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 900px; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.square{
+    width: 40px; 
+    height: 40px; 
+    background: grey; 
+    box-shadow: 0 0 10px grey;
+    margin: 2px; 
+    transition: 2s ease; 
+}
+.square:hover{
+    transition: 0s; 
+}

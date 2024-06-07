@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            width: 100px; 
+            height: 100px;
+            background-color: blue;
+            transition: background-color 0.5s;
+
+        }
+        .box:hover{
+            background-color: red; 
+        }
+        .square{
+            width: 100px; 
+            height: 100px;
+            background-color: blue;
+            transition: width 0.5s, height 0.5s, background-color 0.5s;
+            margin-top: 5px; 
+        }
+        .square:hover{
+            width: 150px; 
+            height: 150px;
+            background-color: red;
+        }
+        .text{
+            color: blue; 
+            transition: color 0.5s; 
+        }
+        .text:hover{
+            color: red; 
+        }
+        .box1{
+            width: 100px; 
+            height: 100px; 
+            background-color: blue; 
+            opacity: 1;
+            transition: opacity 0.5; 
+        }
+        .box1:hover{
+            opacity: 0.5;
+        }
+        .box2{
+            margin-top: 5px;
+            width: 100px; 
+            height: 100px;
+            background-color: blue; 
+            transition: transform 0.5s;
+        }
+        .box2:hover{
+            transform: translate(50px);
+        } */
+        .box{
+            width: 100px; 
+            height: 100px; 
+            background-color: blue;
+            transition: width 0.5s ease-out; 
+        }
+        .box:hover{
+            width: 200px; 
+        }
+        /* .box.linear{
+            transition-timing-function: linear; 
+        } */
+        /* .box.ease{
+            transition-timing-function: ease; 
+        } */
+
+        /* .box.ease-in {
+        transition-timing-function: ease-in;
+        } */
+        .box.ease-out {
+        transition-timing-function: ease-out;
+        }
+
+        /* .box.ease-in-out {
+        transition-timing-function: ease-in-out;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="square"></div>
+    <p class="text">Xin chào các bạn</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box linear"></div>
+    <div class="box ease"></div>
+    <div class="box ease-in"></div>
+    <div class="box ease-out"></div>
+    <div class="box ease-in-out"></div>
+</body>
+</html>

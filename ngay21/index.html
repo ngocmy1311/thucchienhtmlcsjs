@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .switch-wp{
+            width: 80px; 
+            background: green; 
+            border-radius: 20px; 
+            display: block;
+        }
+        .switch-wp label{
+            width: 50%; 
+            height: 50%;
+            background: white;
+            border-radius: 20px; 
+            display: block;
+            transition: 0.5s;
+            position: relative;
+        }
+        .switch-wp input:checked + label{
+            margin-left: 50%;
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="switch-wp">
+        <input type="checkbox" name="" id="switch" hidden>
+        <label for="switch" onclick="myFunction()">.</label>
+
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* sử dụng traslate */
+        .box{
+            width: 100px; 
+            height: 100px; 
+            background-color: red;
+            transform: translate(100px, 50px);
+            /* dùng để dịch chuyển theo trục x 100px và trục y 50px */
+        }
+        /* sử dụng rotate */
+        .box1{
+            width: 100px; 
+            height: 100px;
+            background-color: blue;
+            transform: rotate(0deg);
+            transition: 0.5s;
+        }
+        .box1:hover{
+            transform: rotate(45deg);
+        
+        }
+        /* sử dụng scale */
+        .box2{
+            width: 100px; 
+            height: 100px;
+            background-color: green;
+            transform: scaleY(1);
+            transition: 0.5s;
+        
+        }
+        .box2:hover{
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

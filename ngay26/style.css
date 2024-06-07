@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw; 
+    height: 100vh;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.between{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+    
+}
+.form-input input{
+    border: none; 
+    outline: none; 
+    padding: 10px;
+    margin-right: 10px; 
+    font-size: 20px;
+  
+  
+}
+.bx-hide{
+    margin-right: 10px;
+} 
+button{
+    padding: 10px 20px; 
+    border: none; 
+    outline: none; 
+    background: #f3ec78; 
+    color: #af4261; 
+    font-size: 20px;
+    cursor: pointer;
+}
+.validator{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-direction: column;
+    background: #af4261;
+    padding: 75px; 
+    border-radius: 10px;
+    
+}
+.validator p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+   
+}
+.validator p::before{
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: 10px; 
+}
+.validator p.valid::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding: 10px; 
+    color: #ccc; 
+}
+

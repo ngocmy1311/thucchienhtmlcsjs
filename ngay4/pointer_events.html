@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px; 
+            height: 200px; 
+            background-color: blue;
+            color: white; 
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+        .box:hover{
+            background-color: darkblue; 
+        }
+        .invisible{
+            opacity: 0.5; 
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">box</div>
+</body>
+<script>
+    const box = document.getElementById('box'); 
+    box.addEventListener('click', function(){
+        this.classList.toggle('invisible'); 
+    })
+</script>
+</html>

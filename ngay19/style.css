@@ -1,0 +1,36 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black;  */
+
+}
+body{
+    height: 100vh;
+
+}
+.tool{
+     background: rgb(55, 90, 195); 
+     display: flex; 
+     align-items: center; ;
+}
+.tool > *{
+    height: 40px; 
+    width: 40px; 
+    background: white; 
+    margin: 5px; 
+    font-size: 20px; 
+    padding: 5px; 
+}
+#save{
+    margin-left: auto; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+canvas{
+    border: 1px solid black; 
+    margin: 0 auto;
+}

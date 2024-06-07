@@ -1,0 +1,66 @@
+:root{
+    --facebook-color: #3b5999; 
+    --instagram-color: #e1306c; 
+    --youtube-color: #de463b; 
+    --twitter-color: #46c1f6; 
+    --github-color: #333; 
+}
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+body{ 
+    width: 100vw; 
+    height: 100vh; 
+    background: #dadada; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px; 
+    height: 50px; 
+    /* background: white;  */
+    font-size: 25px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: relative;
+    /* background: var(--facebook-color); */
+   
+}
+.bxl-facebook{
+    color: blue; 
+}
+.tooltip{
+    position: absolute;
+    opacity: 0;
+    background: rgb(17, 17, 109); 
+    padding: 0 30px; 
+    height: 50px; 
+    line-height: 50px;
+    border-radius: 25px;
+    color: white; 
+    transition: 0.5s;
+    pointer-events: none;
+}
+.tooltip::before{
+    content: '';
+    display: block;
+    width: 15px; 
+    height: 15px; 
+    position: absolute;
+    bottom: -7.5px; 
+    background: rgb(17, 17, 109); 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg);
+    /* opacity: 0;  */
+}
+.icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+}

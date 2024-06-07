@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: pink;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  padding-top: 10px; 
+  border-radius: 6px;
+ 
+  overflow: hidden;
+}
+form {
+  border-bottom: 1px solid #aaa;
+  padding: 10px 20px;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  font-size: 24px;
+  width: 100%;
+  margin-right: 3px;
+  border: none;
+  outline: none;
+}
+form button {
+  background: rgb(244, 123, 244);
+  padding: 5px 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.todos {
+  list-style: none;
+  padding: 0;
+}
+.todos li {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 22px;
+  align-items: center;
+}
+.todos li span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* width: 80%; */
+  overflow: hidden;
+}
+li.completed {
+  color: #aaa;
+}
+li.completed span {
+  text-decoration: line-through;
+}
